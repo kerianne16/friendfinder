@@ -197,7 +197,6 @@
     <script type="text/javascript">
         $(".btn").on("click", function (event) {
             event.preventDefault();
-
             let surveyResult = {
                 name: $("#name").val().trim(),
                 photo: $("#photo").val().trim(),
@@ -209,11 +208,8 @@
                     console.log(data);
                     alert("Your information was added! Calculating Results");
                     $("#match-name").text(data.name);
-
                     $("#match-img").append(`<img class="image" height="200" src="${data.photo}"/>`);
-
                 });
-
         });
     </script>
 
